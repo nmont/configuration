@@ -30,6 +30,7 @@ set clipboard+=unnamed
 
 set mouse=a
 set ttymouse=xterm2
+vnoremap // y/<C-R>"<CR>
 
 " For installing plugins
 " call pathogen#infect()
