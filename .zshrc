@@ -1,11 +1,15 @@
 # Lines configured by zsh-newuser-install
 HISTFILE=~/.histfile
-HISTSIZE=10000
-SAVEHIST=10000
+HISTSIZE=100000
+SAVEHIST=100000
 bindkey -v
+
 # End of lines configured by zsh-newuser-install
 # The following lines were added by compinstall
 zstyle :compinstall filename '/home/nmont/.zshrc'
+bindkey "^[[5~" history-beginning-search-backward
+
+bindkey "^[[6~" history-beginning-search-forward
 
 #PROMPT="%{$fg[red]%}%n%{$reset_color%}@%{$fg[blue]%}%m %{$fg_no_bold[yellow]%}%1~ %{$reset_color%}%#"
 #RPROMPT="[%{$fg_no_bold[yellow]%}%?%{$reset_color%}]"
@@ -35,11 +39,16 @@ alias PUF='cd ~/Documents/PUF\ Research/PUFProject/'
 alias grep='grep --color=auto'
 alias tmux='tmux -2'
 alias sensei_set='sudo sensei-raw-ctl'
+alias studio='/home/nmont/Applications/android-studio/bin/studio.sh'
+alias backBoard='cd ~/Documents/GitRepos/Backboard'
+alias UMVDiagram='java -jar ~/Applications/argouml-0.34/argouml.jar &'
+alias winGitRepos='cd /mnt/win/Users/Nick/Documents/gitReposWin'
+alias winMount='sudo mount /dev/sda2 /mnt/win'
 # alias restore='/bin/nitrogen --restore'
 
 # Path Variables
 export JAVA_HOME=/usr/lib/jvm/jdk1.7.0_67
-export PATH=/usr/lib/jvm/jdk1.7.0_67/bin:$PATH
+export PATH=/usr/lib/jvm/jdk1.7.0_67/bin:/home/nmont/Applications:$PATH
 export CATALINA=/usr/local/apache-tomcat-8.0.12
 export CLASSPATH=$CATALINA/lib/servlet-api.jar:$CLASSPATH
 export M2_HOME=/usr/local/apache-maven-3.2.3
@@ -49,4 +58,3 @@ PATH=$M2:$PATH
 export M14=/home/nmont/Documents/GitRepos/M14/M14  
 
 # export JAVA_HOME=/usr/lib/jvm/jre1.7.0_71
-
